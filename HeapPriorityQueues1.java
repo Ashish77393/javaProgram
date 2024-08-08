@@ -17,7 +17,7 @@ public class HeapPriorityQueues1 {
     }
 
     public static void main(String[] args) {
-        PriorityQueue<student> pq = new PriorityQueue<>();
+        PriorityQueue<student> pq = new PriorityQueue<>(Comparator.reverseOrder());
         pq.add(new student("raj", 4));
         pq.add(new student("rohan", 2));
         pq.add(new student("sahil", 7));
