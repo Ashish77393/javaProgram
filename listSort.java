@@ -13,15 +13,15 @@ public class listSort {
         System.out.println("Original list is " + list);
 
         for (int i = 0; i < list.size() - 1; i++) {
-            int minIndex = i;
+            int min = i;
             for (int j = i + 1; j < list.size(); j++) {
-                if (list.get(j) < list.get(minIndex)) {
-                    minIndex = j;
+                if (list.get(j) < list.get(min)) {
+                    min = j;
                 }
             }
             // Swap the found minimum element with the first element
-            int temp = list.get(minIndex);
-            list.set(minIndex, list.get(i));
+            int temp = list.get(min);
+            list.set(min, list.get(i));
             list.set(i, temp);
         }
 
