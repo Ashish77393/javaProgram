@@ -8,7 +8,7 @@ public class sunnyNumber {
         number = number + 1;
         double sqr = Math.sqrt(number);
         if (number % sqr == 0) {
-            System.out.println("Sunny NUmber");
+            System.out.println("Sunny Number");
         } else {
             System.out.println("Not Sunny Number");
         }
